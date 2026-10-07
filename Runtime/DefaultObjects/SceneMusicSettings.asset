@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf4e8f44a5034a48a38e325cc5e3369, type: 3}
+  m_Name: SceneMusicSettings
+  m_EditorClassIdentifier: Assembly-CSharp::PeriAudio.Extensions.SceneMusicSettings
+  entries:
+  - sceneName: Testbed
+    musicEvent:
+      Guid:
+        Data1: 514783787
+        Data2: 1083566667
+        Data3: -239961439
+        Data4: -1629748180
+      Path: event:/TestMusic

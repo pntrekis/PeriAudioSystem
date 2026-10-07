@@ -1,0 +1,11 @@
+{
+  "name": "com.perintrekis.periaudio",
+  "version": "1.0.0",
+  "displayName": "PeriAudio",
+  "description": "A lightweight reusable FMOD audio framework for Unity.",
+  "unity": "6000.0",
+  "author": {
+    "name": "Periklis Ntrekis",
+    "url": "https://perintrekis.com"
+  }
+}
