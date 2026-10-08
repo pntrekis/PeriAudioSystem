@@ -1,6 +1,6 @@
 {
   "name": "com.perintrekis.periaudio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "displayName": "PeriAudio",
   "description": "A lightweight reusable FMOD audio framework for Unity.",
   "unity": "6000.0",
