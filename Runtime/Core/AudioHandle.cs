@@ -1,3 +1,4 @@
+
 using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
@@ -7,6 +8,7 @@ namespace PeriAudio
     public class AudioHandle
     {
         private EventInstance instance;
+        private GameObject attachedObject;
 
         internal AudioHandle(EventReference eventReference)
         {
@@ -16,6 +18,7 @@ namespace PeriAudio
         internal AudioHandle(EventReference eventReference, GameObject go)
         {
             instance = RuntimeManager.CreateInstance(eventReference);
+            attachedObject = go;
 
             if (go != null) RuntimeManager.AttachInstanceToGameObject(instance, go);
         }
@@ -25,6 +28,9 @@ namespace PeriAudio
         public void Play()
         {
             if (!IsValid) return;
+
+            if (attachedObject != null) instance.set3DAttributes(RuntimeUtils.To3DAttributes(attachedObject));
+
             instance.start();
         }
 
